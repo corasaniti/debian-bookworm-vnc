@@ -9,7 +9,8 @@ pwgen, curl, iputils-ping, lsb-release, screenfetch, neofetch, exa, nano
 git clone https://github.com/corasaniti/debian-bookwom-vnc.git
 cd debian-bookworm-vnc
 docker build -t debian-bookworm-vnc .
-docker run -d -p 5900:5900 -p 22:22 -it -e SSHPW=choose-password -e RESOLUTION=1024x768 debian-bookworm-vnc
+docker run -d -it -p 5900:5900 -p 22:22 \
+	-e SSHPW=choose-password -e RESOLUTION=1024x768 debian-bookworm-vnc
 
 ```
 
