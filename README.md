@@ -6,7 +6,7 @@ pwgen, curl, iputils-ping, lsb-release, screenfetch, neofetch, exa, nano, xterm
 
 #### Build Image From Dockerfile and Run from locally build
 ```
-git clone https://github.com/corasaniti/debian-bookwom-vnc.git
+git clone https://github.com/corasaniti/debian-bookworm-vnc.git
 cd debian-bookworm-vnc
 docker build -t debian-bookworm-vnc .
 docker run -d -it \
